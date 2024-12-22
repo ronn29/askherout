@@ -30,9 +30,11 @@ body {
 
 .container.btn {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
 }
 
 .btn a {
@@ -42,11 +44,16 @@ body {
     padding: 10px 25px;
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn a:hover {
     transform: scale(1.1);
+}
+
+.btn a:active {
+    transform: scale(1);
+    box-shadow: 0.3rem 0.6rem 2rem hsl(0, 0%, 0%, 0.2);
 }
 
 @media (max-width: 600px) {
