@@ -42,3 +42,7 @@ body{
     border-radius: 8px;
     box-shadow: .5rem 1rem 3rem hsl(0, 0%, 0%,.3);
 }
+
+.btn a:hover {
+    transform: scale(1.1);
+}
