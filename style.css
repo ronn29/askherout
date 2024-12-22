@@ -29,9 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 25px;
-    flex-wrap: wrap;
-    width: 100%;
-    min-height: 50px; /* Ensures consistent height */
+    flex-wrap: nowrap; 
 }
 
 .btn a {
@@ -42,6 +40,8 @@ body {
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100px;
+    text-align: center;
 }
 
 .btn a:hover {
@@ -53,33 +53,19 @@ body {
     box-shadow: 0.3rem 0.6rem 2rem hsl(0, 0%, 0%, 0.2);
 }
 
-.placeholder {
+.btn a.hidden {
     visibility: hidden; 
-    padding: 10px 25px;
 }
 
 @media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
-    .container {
-        gap: 15px;
-        max-width: 90%;
-        margin: 10px;
-    }
-
     .container.btn {
-        flex-direction: column;
+        flex-direction: column; 
         gap: 15px;
     }
 
     .btn a {
         padding: 8px 20px;
         font-size: 14px;
-    }
-
-    .placeholder {
-        padding: 8px 20px;
+        width: auto;
     }
 }
